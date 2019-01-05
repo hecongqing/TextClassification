@@ -56,4 +56,12 @@ for class_name in class_names:
 
 print('Total CV score is {}'.format(np.mean(scores)))
 
-submission.to_csv('submission.csv', index=False)
+from sklearn.metrics import roc_auc_score
+test_label=pd.read_csv('../input/test_labels.csv')
+auc_sum = 0
+for class_ in class_names:
+    sub_test_label=test_label[test_label.id.isin(test_label[test_label[class_]==-1].id.tolist())==False]
+    sub_submission=submission[submission.id.isin(test_label[test_label[class_]==-1].id.tolist())==False]
+    auc_sum += roc_auc_score(sub_test_label[class_],sub_submission[class_])
+print("test_average_auc_score:",auc_sum/len(class_names))
+#备注：如果test_label=-1,该样本的不计入auc的计算中。
