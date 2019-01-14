@@ -1,6 +1,6 @@
 # TextClassification
 
-## Introduction
+## 简介
 
 以ToxicComment文本分类比赛为例，整理了常见文本分类算法的使用
 
