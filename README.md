@@ -11,3 +11,5 @@
 ### TFIDF+NBSVM
 
 ### Rnn via Attention
+
+### TextCNN
