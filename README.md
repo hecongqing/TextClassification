@@ -1,4 +1,4 @@
-# Classic Text Classification Model
+# Text Classification Model
 
 ## 简介
 
