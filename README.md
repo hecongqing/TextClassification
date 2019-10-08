@@ -6,15 +6,6 @@
 
 ## 文本分类算法
 
-
-
-
-
-
-
-
-
-
 * TFIDF+ Logistic Regression (LR)
 
 * TFIDF+NBSVM
