@@ -20,7 +20,14 @@
 
 * VDCNN ([Conneau et al., 2016](https://arxiv.org/pdf/1606.01781.pdf))
 
+* HAN ([Yang et al., 2016](https://www.cs.cmu.edu/~./hovy/papers/16HLT-hierarchical-attention-networks.pdf))
+
 * DPCNN ([Johnson and Zhang, 2017](https://www.aclweb.org/anthology/P17-1052))
+
+
+
+## Reference
+
 
 
 
