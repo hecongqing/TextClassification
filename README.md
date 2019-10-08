@@ -14,8 +14,13 @@
 
 ### TextCNN
 
-### DPCNN
+### TextRNN
 
+### TextRCNN
+
+### VDCNN
+
+### DPCNN
 
 
 
