@@ -8,7 +8,7 @@
 
 * TFIDF+ Logistic Regression (LR)
 
-* TFIDF+NBSVM
+* TFIDF+NBSVM ([Wang et al., 2012](https://nlp.stanford.edu/pubs/sidaw12_simple_sentiment.pdf))
 
 * RNN via Attention
 
