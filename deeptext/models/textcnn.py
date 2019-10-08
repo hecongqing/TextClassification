@@ -71,5 +71,3 @@ class Text_CNN:
         model = Model(inputs=inp, outputs=out)
         model.compile(loss='categorical_crossentropy', optimizer=self.optimizer, metrics=['accuracy'])
         return model
-
-
