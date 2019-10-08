@@ -6,22 +6,30 @@
 
 ## 文本分类算法
 
-### TFIDF+ Logistic Regression (LR)
 
-### TFIDF+NBSVM
 
-### RNN via Attention
 
-### TextCNN
 
-### TextRNN
 
-### TextRCNN
 
-### VDCNN
 
-### DPCNN
 
+
+* TFIDF+ Logistic Regression (LR)
+
+* TFIDF+NBSVM
+
+* RNN via Attention
+
+* TextCNN ([Kim, 2014](https://arxiv.org/pdf/1408.5882.pdf))
+
+* TextRNN ([Liu et al., 2016](https://arxiv.org/pdf/1605.05101.pdf))
+
+* TextRCNN ([Lai et al., 2015](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9745/9552))
+
+* VDCNN ([Conneau et al., 2016](https://arxiv.org/pdf/1606.01781.pdf))
+
+* DPCNN ([Johnson and Zhang, 2017](https://www.aclweb.org/anthology/P17-1052))
 
 
 
