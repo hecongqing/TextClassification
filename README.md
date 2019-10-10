@@ -1,5 +1,4 @@
-# Text Classification Model
-
+# TextClassification
 ## 简介
 
 deeptext用于快速实现文本分类任务的神经网络模型(作者正在努力update)
