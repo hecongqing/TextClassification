@@ -41,7 +41,7 @@ class Text_CNN:
     def build(self):
         inp = Input(shape=(self.seq_length,), dtype='int32')
         embedding = Embedding(
-            name="word_embedding",
+            name="embedding",
             input_dim=self.embedding_weights.shape[0],
             weights=[self.embedding_weights],
             output_dim=self.embedding_weights.shape[1],
@@ -71,3 +71,5 @@ class Text_CNN:
         model = Model(inputs=inp, outputs=out)
         model.compile(loss='categorical_crossentropy', optimizer=self.optimizer, metrics=['accuracy'])
         return model
+
+
