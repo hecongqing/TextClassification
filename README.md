@@ -5,15 +5,11 @@ deeptext用于快速实现文本分类任务的神经网络模型(作者正在�
 
 ## 文本分类算法
 
-* TFIDF+ Logistic Regression (LR)
 
-* TFIDF+NBSVM ([Wang et al., 2012](https://nlp.stanford.edu/pubs/sidaw12_simple_sentiment.pdf))
 
-* RNN via Attention
+* TextCNN ([Kim, 2014](https://arxiv.org/pdf/1408.5882.pdf)) (已完成)
 
-* TextCNN ([Kim, 2014](https://arxiv.org/pdf/1408.5882.pdf))
-
-* TextRNN ([Liu et al., 2016](https://arxiv.org/pdf/1605.05101.pdf))
+* TextRNN ([Liu et al., 2016](https://arxiv.org/pdf/1605.05101.pdf)) (已完成)
 
 * TextRCNN ([Lai et al., 2015](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9745/9552))
 
@@ -28,6 +24,14 @@ deeptext用于快速实现文本分类任务的神经网络模型(作者正在�
 * BERT
 
 * XLNET
+
+others
+
+* TFIDF+ Logistic Regression (LR)
+
+* TFIDF+NBSVM ([Wang et al., 2012](https://nlp.stanford.edu/pubs/sidaw12_simple_sentiment.pdf))
+
+* RNN via Attention
 
 ## Reference
 
