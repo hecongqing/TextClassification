@@ -5,13 +5,13 @@ Author:
     Congqing He,hecongqing@hotmail.com
 """
 
-from deeptext.models.textcnn import Text_CNN
+from deeptext.models.textcnn import TextCNN
+from deeptext.models.textrnn import TextRNN
 
 import pandas as pd
 import numpy as np
 from keras.preprocessing import text
 from keras.preprocessing import sequence
-from gensim.models.word2vec import Word2Vec
 train = pd.read_csv("./data/train.csv")
 dev= pd.read_csv("./data/dev.csv")
 print(train.label.value_counts())
@@ -62,8 +62,13 @@ lb = LabelEncoder()
 train_label = lb.fit_transform(train['label'].values)
 train_label = to_categorical(train_label)
 
-model =Text_CNN(seq_length=200,embedding_weights=embedding_matrix,kernel_sizes=[1,2,3,4],
-         kernel_filters=[64,64,64,64],activation='relu',pool_size=50,dropout_rate=0.1,label_size=4,
-         optimizer='adam').build()
+# model =TextCNN(seq_length=200,embedding_weights=embedding_matrix,kernel_sizes=[1,2,3,4],
+#          kernel_filters=[64,64,64,64],activation='relu',pool_size=50,dropout_rate=0.1,label_size=4,
+#          optimizer='adam').build()
+
+model =TextRNN(seq_length=200,embedding_weights=embedding_matrix,rnn_type='GRU',bidirectional=True,hidden_size=100,
+               pool_type="attpool",activation='relu',dropout_rate=0.1,label_size=4, optimizer='adam').build()
+
+
 model.summary()
 model.fit(train_,train_label)

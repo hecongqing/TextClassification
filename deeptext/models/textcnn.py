@@ -14,7 +14,7 @@ from tensorflow.keras.layers import (Input, Embedding, Conv1D, concatenate,
 from tensorflow.keras.models import Model
 
 
-class Text_CNN:
+class TextCNN:
     def __init__(self, seq_length, embedding_weights, kernel_sizes, kernel_filters,
                  activation, pool_size, dropout_rate, label_size, optimizer):
         """
