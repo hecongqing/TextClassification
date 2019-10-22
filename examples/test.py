@@ -7,6 +7,7 @@ Author:
 
 from deeptext.models.textcnn import TextCNN
 from deeptext.models.textrnn import TextRNN
+from  deeptext.models.textrcnn import TextRCNN
 
 import pandas as pd
 import numpy as np
@@ -66,9 +67,13 @@ train_label = to_categorical(train_label)
 #          kernel_filters=[64,64,64,64],activation='relu',pool_size=50,dropout_rate=0.1,label_size=4,
 #          optimizer='adam').build()
 
-model =TextRNN(seq_length=200,embedding_weights=embedding_matrix,rnn_type='GRU',bidirectional=True,hidden_size=100,
-               pool_type="attpool",activation='relu',dropout_rate=0.1,label_size=4, optimizer='adam').build()
+# model =TextRNN(seq_length=200,embedding_weights=embedding_matrix,rnn_type='GRU',bidirectional=True,hidden_size=100,
+#                pool_type="attpool",activation='relu',dropout_rate=0.1,label_size=4, optimizer='adam').build()
 
+
+model = TextRCNN(seq_length=200,embedding_weights=embedding_matrix,rnn_type='GRU',bidirectional=True,hidden_size=100,
+                 kernel_sizes=[32],kernel_filters=[64], pool_size=50, activation='relu',dropout_rate=0.1,label_size=4,
+                 optimizer='adam').build()
 
 model.summary()
 model.fit(train_,train_label)
