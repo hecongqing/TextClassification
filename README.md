@@ -11,7 +11,7 @@ deeptext用于快速实现文本分类任务的神经网络模型(作者正在�
 
 * TextRNN ([Liu et al., 2016](https://arxiv.org/pdf/1605.05101.pdf)) (已完成)
 
-* TextRCNN ([Lai et al., 2015](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9745/9552))
+* TextRCNN ([Lai et al., 2015](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/download/9745/9552))  (已完成)
 
 * VDCNN ([Conneau et al., 2016](https://arxiv.org/pdf/1606.01781.pdf))
 
